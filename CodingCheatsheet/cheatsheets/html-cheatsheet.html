@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/prism.css">
+    <script src="../js/prism.js"></script>
+    <script src="https://kit.fontawesome.com/0bc4253fec.js" crossorigin="anonymous"></script>
+
+    <title>HTML CheatSheet: CodingCheatsheet</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CodingCheatsheet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HTML</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="css-cheatsheet.html">CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript-cheatsheet.html">JavaScript</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button type="submit" class="btn btn-outline-success">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container my-5">
+            <h1><i class="fab fa-html5"></i> HTML CheatSheet & Code Snippets</h1>
+            <h2>Introduction:</h2>
+            <p>Hyper Text Markup Language also Know as HTML is used to create Web Pages or Websites. It
+                is developed by Tim Berners-Lee in 1993. It is a service which runs Web Pages.</p>
+            <p> &#8620; Text Editiors: NotePad, Notepad ++, Sublime Text, VS Code etc.</p>
+            <p> &#8620; Output: On any web browser.</p>
+            <p> &#8620; Extension: Save into .html or .htm</p>
+
+            <h2>HTML Tags:</h2>
+            <p> There are two types of tags in HTML</p>
+            <p> 1. Paired Tags: Which starts and close. Like &lt;html&gt; &lt;/html&gt;, &lt;a&gt;
+                &lt;/a&gt;</p>
+            <p> 2. Unpaired Tags: Which starts but don't close. Like &lt;br&gt; &lt;hr&gt;,
+                &lt;img&gt;</p>
+
+            <h3>Boiler Plate Code:</h3>
+            <pre class="language-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Title Heret&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            <h3>Comment Tag:</h3>
+            <pre
+                class="language-html"> <code>&lt;!-- This is comment. Code or Text in comment won't appear in brower. --&gt;</code></pre>
+
+            <h3>Anchor Tag:</h3>
+            <pre class="language-html"><code>&lt;a href="About.html"&gt;About Us&lt;/a&gt;
+
+&lt;a href="https://www.facebook.com/" target="_blank"&gt;Go to facebook&lt;/a&gt;
+
+&lt;a href="https://www.facebook.com/" title="Click here to open facebook"&gt;Open facebook&lt;/a&gt;
+
+&lt;a href="#"&gt;Go to Top&lt;/a&gt;
+
+&lt;a href="images/photo.jpg" download="photo" hreflang="en"&gt;Download Here&lt;/a&gt;
+
+&lt;p&gt; &lt;a href="#computer"&gt;Computer&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt; &lt;a href="#laptop"&gt;Laptop&lt;/a&gt; &lt;/p&gt;
+
+&lt;h1&gt; &lt;a name="computer"&gt;Computer&lt;/a&gt; &lt;/h1&gt;
+&lt;h1&gt; &lt;a name="laptop"&gt;Laptop&lt;/a&gt; &lt;/h1&gt;</code></pre>
+
+
+            <h3>Abbr Tag (Abbreviation Tag):</h3>
+            <pre class="language-html"><code>&lt;abbr title="Pen Drive"&gt;PD&lt;/abbr&gt;</code></pre>
+
+            <h3>Acronym Tag (Abbreviation Tag):</h3>
+            <pre class="language-html"><code>&lt;acronym title="United Kingdom"&gt;UK&lt;/acronym&gt;</code></pre>
+
+            <h3>Address Tag:</h3>
+            <pre class="language-html"><code>&lt;address&gt;
+Author: Afaque Jaan.
+&lt;a href="mailto: abc@abc.com"&gt;Email: abc@abc.com&lt;/a&gt;
+Visit us at: &lt;a href="https://www.afaquejaanbuledi.cf"&gt;www.afaquejaanbuledi.cf&lt;/a&gt;
+&lt;/address&gt;</code></pre>
+
+            <h3>Article Tag</h3>
+            <pre class="language-html"><code>&lt;article&gt;
+&lt;img src="img/img.jpeg" alt="article-image"&gt;
+&lt;h1&gt;This is article heading.&lt;/h1&gt;
+&lt;p&gt;this is article paragraph.&lt;/p&gt;
+&lt;time&gt; 11/07/2021 02:31 PM&lt;/time&gt;
+&lt;address&gt;Author: Afaque Buledi.&lt;/address&gt;
+&lt;/article&gt;</code></pre>
+
+            <h3>Area Tag</h3>
+            <pre class="language-html"><code>&lt;img src="img/image.jpeg" usemap="#universe" alt=""&gt;
+&lt;map name="universe"&gt;
+    &lt;area shape="ract" coords="Left, top, right, bottom" href="saturn.html" title="Click Me To See Saturn Info:" alt=""&gt;
+&lt;/map&gt;</code></pre>
+
+            <h3>Aside Tag</h3>
+            <pre class="language-html"><code>&lt;aside&gt;
+&lt;h1&gt;This is aside heading.&lt;/h1&gt;
+&lt;p&gt;This is aside paragraph.&lt;/p&gt;
+&lt;/aside&gt;</code></pre>
+
+            <h3>Audio Tag</h3>
+            <pre class="language-html"><code>&lt;audio src="song.mp3" type="audio/mp3" controls="autoplay"&gt; &lt;/audio&gt;
+&lt;!-- Controls: autoplay, loop, muted, preload --&gt;</code></pre>
+
+            <h3>Bold Tag</h3>
+            <pre class="language-html"><code>&lt;b&gt;This Is Bold Line.&lt;/b&gt;</code></pre>
+
+
+            <h3>Base Tag</h3>
+            <pre class="language-html"><code>&lt;!-- Use This Code In Head Tag --&gt;
+&lt;base href="Media\Images\"&gt;
+
+&lt;!-- Use This Code In Body Tag --&gt;
+&lt;img src="img.jpeg" alt=""&gt;</code></pre>
+
+            <h3>Bdo Tag</h3>
+            <pre class="language-html"><code>&lt;bdo dir="ltr"&gt;This is bdo Tag.&lt;/bdo&gt;
+&lt;!-- dir: Direction
+ltr: Left to Right
+rtl: Right to Left --&gt;</code></pre>
+
+            <h3>Blockquote Tag</h3>
+            <pre class="language-html"><code>&lt;blockquote cite="articleLocation"&gt;&lt;/blockquote&gt;
+&lt;!-- To Know From Article Is Taken. --&gt;</code></pre>
+
+            <h3>Body Tag</h3>
+            <pre class="language-html"><code>&lt;body bgcolor="gray"&gt;;  &lt;/body&gt; &lt;!-- Background Color of Complete Webpage. --&gt;
+
+&lt;body background="img/image.jpeg"&gt; &lt;/body&gt; &lt;!-- Background Image of Complete Webpage. --&gt;
+
+&lt;body text="red"&gt;  &lt;/body&gt; &lt;!-- Text Color of Complete Webpage. --&gt;
+
+&lt;body link="green"&gt;  &lt;/body&gt; &lt;!-- Link Color of Complete Webpage. --&gt;
+
+&lt;body vlink="yellow"&gt;  &lt;/body&gt; &lt;!-- Visited Link Color of Complete Webpage. --&gt;
+
+&lt;body alink="blue"&gt;  &lt;/body&gt;; &lt;!-- Active Link Color of Complete Webpage. --&gt;</code></pre>
+
+            <h3>Button Tag</h3>
+            <pre class="language-html"><code>&lt;button type="button" name="button"&gt; This is simple button &lt;/button&gt;
+
+&lt;button type="button" name="button" disabled=""&gt; This is disabled button &lt;/button&gt;
+
+&lt;button type="button" name="button" accesskey="B"&gt; Alt + R Shortcut Key of This Buttons &lt;/button&gt;
+
+&lt;button type="submit" name="submit" onclick="alert('Form Submited.')"&gt; Message will apear after click &lt;/button&gt;
+
+&lt;!-- Note: Button Type: button, submit, reset --&gt;</code></pre>
+
+            <h3>Caption Tag</h3>
+            <pre class="language-html"><code>&lt;table&gt;
+&lt;caption&gt; This is table caption. &lt;/caption&gt;
+&lt;/table&gt;</code></pre>
+
+            <h3>Cite Tag</h3>
+            <pre
+                class="language-html"><code>&lt;p&gt;&lt;cite&gt;Afaque Jaan Buledi &lt;/cite&gt;Software and Web Developer.&lt;/p&gt;</code></pre>
+
+            <h3>Code Tag</h3>
+            <pre class="language-html"><code>&lt;h1&gt;This is JavaScript Code.&lt;/h1&gt;
+&lt;code&gt;
+var a = 5;
+    function myFunc(){
+        Console.log(a);
+    }
+&lt;/code&gt;</code></pre>
+
+            <h3>Col Tag (For More Columns)</h3>
+            <pre class="language-html"><code>&lt;table&gt;
+&lt;caption&gt;This is caption.&lt;/caption&gt;
+&lt;colgroup&gt;
+    &lt;col span="1" style="background-color: red;"&gt;
+&lt;/colgroup&gt;
+&lt;/table></code></pre>
+
+
+
+
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

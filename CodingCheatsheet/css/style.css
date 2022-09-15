@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body{
+  background: rgba(0, 0, 0, 0.6) url('../img/bg-image.jpg');
+  background-size: cover;
+  background-blend-mode: darken;
+  background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: white !important;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+h3 {
+  margin-top: 2%;
+}

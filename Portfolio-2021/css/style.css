@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Ubuntu:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.icons li a {
+  color: white;
+}
+
+.about-img {
+  max-height: 50vh;
+  border-radius: 8px;
+}
+
+.img-gallery {
+  height: 50vh !important;
+}
+
+.contact-links p a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Utility Classes */
+.h-primary {
+  font-size: 3rem;
+  font-family: "Ubuntu", sans-serif !important;
+}

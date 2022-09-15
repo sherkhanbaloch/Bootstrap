@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/prism.css" />
+    <script src="../js/prism.js"></script>
+    <script src="https://kit.fontawesome.com/0bc4253fec.js" crossorigin="anonymous"></script>
+
+    <title>JavaScript CheatSheet: CodingCheatsheet</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CodingCheatsheet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html-cheatsheet.html">HTML</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="css-cheatsheet.html">CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">JavaScript</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button type="submit" class="btn btn-outline-success"> Search </button>
+                    <!-- <button type="button" id="btnDark" class="btn btn-outline-success"> Dark Mode </button> -->
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container my-5">
+            <h1>
+                <i class="fab fa-js-square"></i> JavaScript CheatSheet & Code Snippets
+            </h1>
+
+            <h2>Introduction:</h2>
+            <p>
+                JavaScript is the most popuplar language in the world for the web. We
+                also call it Scripting Language.
+            </p>
+            <p> &#8620; Extension: Save into .js</p>
+
+            <h2>Types of Scripting Languages</h2>
+            <p>There are two types of Scripting Language:</p>
+            <p>1. Client Side Scripting Languages such as JavaScript etc.</p>
+            <p>2. Server Side Scripting Languages such as Php, .Net etc.</p>
+
+            <h2>JavaScript Libraries</h2>
+            <p>JQuery, React, UnderScore, D3.js, Glimmer.js etc</p>
+
+            <h2>Uses of JavaScript</h2>
+            <p>
+                Web Development, App Development, Software Development, Game
+                Development etc.
+            </p>
+
+            <h3>Implementation of JavaScript:</h3>
+            <pre class="language-html">
+<code>// Inpage JavaScript
+&lt;script&gt;
+    document.write("Inpage or Internal JavaScript");
+&lt;/script&gt;
+
+// External JavaScript
+&lt;script src="js/script.js">&lt;/script&gt;
+document.write("External JavaScript");</code>
+            </pre>
+
+            <h3>Add HTML Tags in JavaScript:</h3>
+            <pre class="language-js"><code>document.Write("First Line of JavaScript &lt;br&gt; &lt;br&gt;");
+document.Write("&lt;i&gt; &lt;b&gt; Second Line &lt;/b&gt; of JavaScript &lt;/i&gt;");
+            </code></pre>
+
+            <h3>Comments in JavaScript</h3>
+            <pre class="language-js"><code>// Single Line Comment
+/* This is Multi 
+        Line Comment */</code></pre>
+
+            <h3>Variables in JavaScript:</h3>
+            <p>
+                Variable are used to store Data, such as Container. Variable is a name
+                of a Storage Location.
+            </p>
+            <pre class="language-js"><code>// Initialization
+var myName = "Afaque Jaan";
+var myAge = 18;
+
+// Declare
+var myName, myAge;
+
+// Assign Later
+myName = "Afaque Jaan";
+myAge = 18;
+
+document.write(myName + myAge);</code></pre>
+
+            <h3>Difference Between Var, Let, Const</h3>
+            <p>There are three types of Variables:</p>
+            <p>
+                1. Var: if we declare a Variable with Var then we can declare it again
+                with the same name and if we want to re-assign it's value then we can
+                do that too.
+            </p>
+            <p>
+                2. Let: if we declare a variable with Let then we cannot declare it
+                again with the same name but can re-assign it's value.
+            </p>
+            <p>
+                3. Const: if we declare a variable with Const then can neither declare
+                it again nor can re-assign it's value.
+            </p>
+
+            <h3>Data Types in JavaScript</h3>
+            <p>There are two types of Data Types.</p>
+            <p>
+                1. Primitive Data Types: String, Number, Boolean, Null, Undefined.
+            </p>
+            <p>2. Non-Primitive Data Types: Object, Array.</p>
+            <pre class="language-js"><code>// Primitive Data Types:
+var Name = "Afaque Jaan";
+document.write(typeof Name);
+
+var Age = 18;
+document.write(typeof Age);
+
+var isActive = true;
+document.write(typeof isActive);
+
+var x = null;
+document.write(typeof x);
+
+var x = undefined;
+document.write(typeof x);
+
+// Non-Primitive Data Types:
+var countries = ["Pakistan", "India", "China", "USA", "Germany"];
+document.write(typeof countries);
+
+var Student = {
+    Name = "Afaque Jaan",
+    Age = 18
+};
+document.write(typeof Student);</code></pre>
+
+            <h3>Operators:</h3>
+            <p>Operator is a symbol that is used to perform operations according to user requirement. We can perform
+                this in variables or values</p>
+            <h3>Types of Operators</h3>
+            <h3>1. Arithmetic Operators:</h3>
+            <p>Arithmetic Operators are: +, -, *, /, ++, --</p>
+            <pre class="language-js"><code>document.write(5 + 3); // Addition
+document.write(5 - 3); // Subtraction
+document.write(2 * 5); // Multiplication
+document.write(2 / 5); // Divide
+
+var a = 5;
+var b = 3;
+document.write(a + b);
+
+var a = 5;
+a++;        // Increament (1 will be added in 5 and it will be 6)
+document.write(a);
+
+var a = 5;
+a--;        // Decreament (1 will be subtract from 5 and it will be 4)
+document.write(a);</code></pre>
+
+            <h3>2. Assignment Operators:</h3>
+            <p> Assignment Operators are: =, +=, -=, /=, etc</p>
+            <pre class="language-js"><code>// Simple: = and Compound: +=, -=
+var a = 6;
+var b = 3;
+a += b;
+a = a + b; // Real Form
+
+a -= b;
+a = a - b; // Real Form
+
+document.write(a);</code></pre>
+
+            <h3>3. Comparison Operators:</h3>
+            <p>Comparison Operators are: <,>, <=,>=, ==, ===, !=, !== etc</p>
+            <pre class="language-js"><code>// == Equal To
+var x = 5;
+var y = 5;
+console.log(x == y);
+
+// === Equal Value and Equal Type
+var x = 5;
+var y = "5";
+console.log(x === y);
+
+// != Not Equal
+var x = 5;
+var y = 5;
+console.log(x != y);
+
+// !== Not Equal Value or Not Equal Type
+var x = 5;
+var y = "5";
+console.log(x !== y);
+
+// > Greater Than
+var x = 6;
+var y = 5;
+console.log(x > y);
+
+// < Less Than
+var x = 4;
+var y = 5;
+console.log(x < y);
+
+// >= Greater Than or Equal To
+var x = 5;
+var y = 5;
+console.log(x >= y);
+
+// <= Less Than or Equal To
+var x = 4;
+var y = 5;
+console.log(x <= y);</code></pre>
+
+            <h3>4. Logical Operators:</h3>
+            <p>Logical Operators are: &&, ||, ! etc</p>
+            <pre class="language-js"><code>// && - And Operator. All Given Conditions Should Be True.
+var age = 20;
+if (age >= 18 && age <= 40) {
+    console.log("This Condition Will Retrun True Because Both Conditon Match.")
+}
+
+// || - Or Operator. Any Single Condition Form Given Conditions Should Be True.
+var x = 5;
+var y = 10;
+if (x == 5 || y == 15) { 
+    console.log("This Condition Will Retrun True Because First Condition Match")
+}
+
+// ! - Not Operator. Make True To False and False To True.
+var x = 5;
+console.log(!x == 5);</code></pre>
+
+            <h3>5. Conditional Ternary Operator</h3>
+            <p>Conditional Ternary Operators are: ?:</p>
+            <pre class="language-js"><code>var age = 15;
+var drive = age >= 18 ? 'You Can Drive' : 'You Cannot Drive';
+console.log(drive);</code></pre>
+
+            <h3>Conditions In JavaScript</h3>
+            <h3>1. If, If Else, If Else If Statement</h3>
+            <pre class="language-js"><code>
+// 1. If Statement
+var x = 5;
+var y = 5;
+
+if (x == y) {
+    console.log("This Will Return True Because X and Y has Same Value and Is Equal To Each Other.");
+}
+
+var x = 8;
+var y = "5";
+
+if (x === y) {
+    console.log("This Will Return False Beacuse X and Y Has Different Data Type and Different Values.");
+}
+
+// 2. If Else Statement
+var x = 5;
+var y = 5;
+
+if (x == y) {
+    console.log("X and Y are equal.");
+}
+else {
+    console.log("X and Y are not equal.");
+}
+
+// 3. If Else If Statement
+var time = 8;
+
+if (time >= 8 && time < 12) {
+    console.log("Good Morning");
+}
+else if (time >= 12 && time < 4) {
+    console.log("Good After Noon");
+}
+else if (time >= 4 && time < 8) {
+    console.log("Good Evening");
+}
+else {
+    console.log("Good Night");
+}</code></pre>
+
+            <h3>2. Switch Case</h3>
+            <pre class="language-js"><code>// Exmaple One:
+var day = 1;
+switch (day) {
+    case (1): console.log("Monday");
+        break;
+    case (2): console.log("Tuesday");
+        break;
+    case (3): console.log("Wednesday");
+        break;
+    case (4): console.log("Thursday");
+        break;
+    case (5): console.log("Friday");
+        break;
+    case (6): console.log("Saturday");
+        break;
+    case (7): console.log("Sunday");
+        break;
+
+    default: console.log("No Day Found. Enter Valid Day Number.");
+        break;
+}
+// Example Two:
+var age = 18;
+switch (true) {
+    case (age >= 18 && age &gt;= 40): console.log("You Are Eligible.");
+        break;
+    default: console.log("You Are Not Eligible");
+        break;
+}</code></pre>
+
+            <h3>Alert Box in JavaScript</h3>
+            <pre class="language-js"><code>// Simple Alert Box
+alert("This Is Simple Alert Box.")
+
+// Conditions In Alert Box.
+var a = 8;
+var b = 5;
+if (a > b) {
+    alert("A Is Greater Than B.")
+}
+else {
+    alert("B Is Greater Than A.")
+}</code></pre>
+
+            <h3>Confirm Box in JavaScript</h3>
+            <pre class="language-js"><code>// Simple Confirm Box
+confirm("Do you like our website?");
+
+// Comfirm Box With Condition
+var a = confirm("Are You 18+ ?");
+if (a) {
+    alert("Welcome To This Website.")
+}
+else {
+    alert("This Website Is Not For You. Please Wait Till When You Become 18 Years Old.")
+}</code></pre>
+
+            <h3>Prompt Box in JavaScript</h3>
+            <pre class="language-js"><code>// Simple Prompt Box
+prompt("What Is Your Name?");
+
+var name = prompt("What Is Your Name?");
+alert("Welcome Dear" + name)
+
+// Prompt Box With Condition
+var day = prompt("Enter Day Number.");
+switch (true) {
+    case (day == 1): console.log("Monday");
+        break;
+    case (day == 2): console.log("Tuesday");
+        break;
+    case (day == 3): console.log("Wednesday");
+        break;
+    case (day == 4): console.log("Thursday");
+        break;
+    case (day == 5): console.log("Friday");
+        break;
+    case (day == 6): console.log("Saturday");
+        break;
+    case (day == 7): console.log("Sunday");
+        break;
+
+    default: console.log("No Day Found. Enter Valid Day Number.");
+        break;
+}</code></pre>
+
+            <h3>Functions in JavaScript</h3>
+            <pre class="language-js"><code>// Creating Function
+function myIntro() {
+    document.write("Hello World! I am Afaque Buledi.");
+    document.write("&lt;/b&gt;");
+    document.write("Sottware & Web Developer.");
+}
+
+// Calling Fuction
+myIntro();
+
+// ********** Functions With Parameters **********
+
+// Example One:
+function fullName(firstName, lastName) {
+    console.log('Hello ' + firstName + ' ' + lastName);
+}
+fullName('Afaque', 'Buledi');
+
+// Example Two:
+function sum(num1, num2) {
+    console.log(num1 + num2);
+}
+sum(3, 5);
+
+// Setting Default Names If User Don't Give Any Value
+function fullName(firstName = 'Afaque', lastName = 'Buledi') {
+    console.log('Hello ' + firstName + ' ' + lastName);
+}
+fullName();
+
+// ********** Function With Return Value **********
+
+// Example One:
+function fullName(firstName, lastName) {
+    var a = 'Hello ' + firstName + ' ' + lastName;
+    return a;
+}
+var b = fullName('Afaque', 'Buledi');
+console.log(b);
+
+// Example Two:
+function sumMarks(eng, math, urdu, physics, chemistry) {
+    var total = eng + math + urdu + physics + chemistry;
+    return total;
+}
+var printResult = sumMarks(50, 58, 45, 67, 85);
+console.log(printResult);
+
+function percentage(obtain) {
+    var per = obtain / 500 * 100;
+    return per;
+}
+var printPercentage = percentage(printResult);
+console.log(printPercentage + ' %');
+</code></pre>
+
+            <h3>Global and Local Varibale in JavaScript</h3>
+            <pre
+                class="language-js"><code>// Global Varibale declare outside the function. 
+var global = 'This is Global Varibale';
+console.log(global)
+
+// Local Varibale declare inside the function.
+function abc() {
+    var local = 'This is Local Varible';
+    console.log(local);
+    console.log(global);
+}
+
+abc();
+
+// Note: Global Varibale Can Be Used In Any Function, But Local Varible Cannnot be used outside of function.</code></pre>
+
+            <h3>Mouse Events In JavaScript</h3>
+            <pre class="language-html"><code>&lt;div id="box" onclick="func()"&gt;&lt;/div&gt; &lt;!-- Left Click Event. --&gt;
+
+&lt;div id="box" oncontextmenu="func()"&gt;&lt;/div&gt; &lt;!-- Right Click Event. --&gt;
+
+&lt;div id="box" ondblclick="func()"&gt;&lt;/div&gt; &lt;!-- Double Click Event. --&gt;
+
+&lt;div id="box" onmousedown="func()"&gt;&lt;/div&gt; &lt;!-- Mouse Down Click Event. --&gt;
+
+&lt;div id="box" onmouseup="func()"&gt;&lt;/div&gt; &lt;!-- Mouse Up Click Event. --&gt;
+
+&lt;div id="box" onmouseover="func()"&gt;&lt;/div&gt; &lt;!-- Mouse Over Event. --&gt;
+
+&lt;div id="box" onmouseout="func()"&gt;&lt;/div&gt; &lt;!-- Mouse Out Event. --&gt;
+
+&lt;script&gt;
+    function func() {
+        alert('Event Activated.');
+    }
+&lt;/script&gt;</code></pre>
+
+            <h3>Keyboard Events In JavaScript</h3>
+            <pre class="language-html"><code>&lt;div id="form"&gt;
+    &lt;!-- Example One: --&gt;
+    &lt;input type="text" onkeydown="alert(this.value);"&gt;
+
+    &lt;input type="text" onkeyup="alert(this.value);"&gt;
+
+    &lt;input type="text" onkeypress="alert(this.value);"&gt;
+
+    &lt;!-- Example Two: --&gt;
+    &lt;input type="text" onkeydown="document.getElementById('form').style.backgroundColor = this.value"&gt;
+    &lt;!-- Press Space or Any Key --&gt;
+
+    &lt;input type="text" onkeyup="document.getElementById('form').style.backgroundColor = this.value"&gt;
+    &lt;!-- No Need to Press any other Key. --&gt;
+
+    &lt;input type="text" onkeypress="document.getElementById('form').style.backgroundColor = this.value"&gt;
+&lt;/div&gt;</code></pre>
+
+
+                <h3>Windows Events In JavaScript</h3>
+                <pre class="language-html"><code>&lt;button onclick="openWindow()"&gt;Open Window&lt;/button&gt;
+
+&lt;button onclick="closeWindow()"&gt;Close Window&lt;/button&gt;
+
+&lt;script&gt;
+    var myWindow;
+
+    function openWindow() {
+        // window.open();
+        myWindow = window.open("https://www.google.com", "_blank", "width=500px, height=500px, left=200px, top=200px ");
+    }
+
+    function closeWindow() {
+        myWindow.close();
+    }
+&lt;/script&gt;</code></pre>
+
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
